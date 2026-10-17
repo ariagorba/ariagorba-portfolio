@@ -1,0 +1,159 @@
+.main {
+  width: 100%;
+}
+
+.contentWrapper {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Hero Section */
+.heroSection {
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  max-width: 820px;
+}
+
+.heroTitle {
+  font-size: 3.25rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin-bottom: 1.75rem;
+}
+
+.heroBio {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.heroBio strong {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.mobileHeroLinks {
+  display: none;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.mobileLink {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.linkDivider {
+  color: #D1D1D6;
+  font-weight: 300;
+}
+
+/* Works Section */
+.worksSection {
+  margin-top: 4.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Links Section */
+.linksSection {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.linksList {
+  padding-left: 1.25rem;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.linksListItem {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.inlineLink {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
+}
+
+.inlineLink:hover {
+  opacity: 0.75;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 767px) {
+  .contentWrapper {
+    padding: 0 1.25rem;
+  }
+
+  .heroSection {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2.15rem;
+    line-height: 1.18;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.025em;
+  }
+
+  .heroBio {
+    font-size: 1.0625rem;
+    line-height: 1.55;
+  }
+
+  .mobileHeroLinks {
+    display: flex;
+  }
+
+  .worksSection {
+    margin-top: 3.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .linksSection {
+    margin-top: 3.5rem;
+  }
+
+  .linksListItem {
+    font-size: 0.9375rem;
+  }
+}
