@@ -259,23 +259,13 @@ export default function OtorajaCaseStudy() {
           </p>
 
           <div className={styles.figure}>
-            <div style={{ display: "flex", justifyContent: "center", gap: "1rem", padding: "1.5rem", flexWrap: "wrap", backgroundColor: "#FAFAFA" }}>
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-pos-item-wizard-1.png"
-                alt="Product list selection"
-                width={260}
-                height={500}
-                style={{ objectFit: "contain", borderRadius: 8 }}
-              />
-              <span style={{ alignSelf: "center", fontSize: "1.5rem", color: "#9CA3AF" }}>&rarr;</span>
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-pos-item-wizard-3.png"
-                alt="Confirmation step"
-                width={260}
-                height={500}
-                style={{ objectFit: "contain", borderRadius: 8 }}
-              />
-            </div>
+            <Image
+              src="/assets/images/showcase-otoraja/otj_img1-onboarding-inventory.png"
+              alt="Product population from original parts"
+              width={1200}
+              height={700}
+              className={styles.figureImage}
+            />
             <div className={styles.caption}>
               Product population where the user chose to add from a list of original parts.
             </div>
@@ -301,46 +291,26 @@ export default function OtorajaCaseStudy() {
           </p>
 
           <div className={styles.figure}>
-            <div style={{ display: "flex", justifyContent: "center", gap: "1rem", padding: "1.5rem", flexWrap: "wrap", backgroundColor: "#FAFAFA" }}>
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-POS-paket-1.png"
-                alt="Bundling before"
-                width={260}
-                height={500}
-                style={{ objectFit: "contain", borderRadius: 8 }}
-              />
-              <span style={{ alignSelf: "center", fontSize: "1.5rem", color: "#9CA3AF" }}>&rarr;</span>
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-POS-paket-2.png"
-                alt="Bundling after"
-                width={260}
-                height={500}
-                style={{ objectFit: "contain", borderRadius: 8 }}
-              />
-            </div>
+            <Image
+              src="/assets/images/showcase-otoraja/otj_img2-pos-bundling.png"
+              alt="Product bundling"
+              width={1200}
+              height={700}
+              className={styles.figureImage}
+            />
             <div className={styles.caption}>
               After iterations, users can see all items within a bundling without needing to open the detail page.
             </div>
           </div>
 
           <div className={styles.figure}>
-            <div style={{ display: "flex", justifyContent: "center", gap: "1rem", padding: "1.5rem", flexWrap: "wrap", backgroundColor: "#FAFAFA" }}>
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-POS-change-price-1.png"
-                alt="Change price before"
-                width={260}
-                height={500}
-                style={{ objectFit: "contain", borderRadius: 8 }}
-              />
-              <span style={{ alignSelf: "center", fontSize: "1.5rem", color: "#9CA3AF" }}>&rarr;</span>
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-POS-change-price-2.png"
-                alt="Change price after shortcut"
-                width={260}
-                height={500}
-                style={{ objectFit: "contain", borderRadius: 8 }}
-              />
-            </div>
+            <Image
+              src="/assets/images/showcase-otoraja/otj_img3-pos-price-shortcut.png"
+              alt="Price shortcut"
+              width={1200}
+              height={700}
+              className={styles.figureImage}
+            />
             <div className={styles.caption}>
               Users must type to change an item&apos;s price. After iteration, they can save it as shortcut to save time.
             </div>
@@ -361,23 +331,13 @@ export default function OtorajaCaseStudy() {
           </p>
 
           <div className={styles.figure}>
-            <div style={{ display: "flex", justifyContent: "center", gap: "1rem", padding: "1.5rem", flexWrap: "wrap", backgroundColor: "#FAFAFA" }}>
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-ERP-list-1-table.png"
-                alt="ERP table format"
-                width={260}
-                height={500}
-                style={{ objectFit: "contain", borderRadius: 8 }}
-              />
-              <span style={{ alignSelf: "center", fontSize: "1.5rem", color: "#9CA3AF" }}>&rarr;</span>
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-ERP-list-2-card.png"
-                alt="ERP card format"
-                width={260}
-                height={500}
-                style={{ objectFit: "contain", borderRadius: 8 }}
-              />
-            </div>
+            <Image
+              src="/assets/images/showcase-otoraja/otj_img4-erp-table2cards.png"
+              alt="ERP list page optimized for smartphone"
+              width={1200}
+              height={700}
+              className={styles.figureImage}
+            />
             <div className={styles.caption}>
               ERP list page was optimized for smartphone usage: table (left / before) vs card (right / after).
             </div>
@@ -411,58 +371,26 @@ export default function OtorajaCaseStudy() {
           </p>
 
           <div className={styles.figure}>
-            <div style={{ display: "flex", justifyContent: "center", gap: "0.75rem", padding: "1.5rem", flexWrap: "wrap", backgroundColor: "#FAFAFA" }}>
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-POS-latest-1.png"
-                alt="POS latest screen 1"
-                width={150}
-                height={300}
-                style={{ objectFit: "contain" }}
-              />
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-POS-latest-2.png"
-                alt="POS latest screen 2"
-                width={150}
-                height={300}
-                style={{ objectFit: "contain" }}
-              />
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-POS-latest-3.png"
-                alt="POS latest screen 3"
-                width={150}
-                height={300}
-                style={{ objectFit: "contain" }}
-              />
-            </div>
+            <Image
+              src="/assets/images/showcase-otoraja/otj_img5-pos-improvements.png"
+              alt="POS improvements"
+              width={1200}
+              height={700}
+              className={styles.figureImage}
+            />
             <div className={styles.caption}>
               Some of the POS improvements were inventory wizard, down payment, and dashboard.
             </div>
           </div>
 
           <div className={styles.figure}>
-            <div style={{ display: "flex", justifyContent: "center", gap: "0.75rem", padding: "1.5rem", flexWrap: "wrap", backgroundColor: "#FAFAFA" }}>
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-ERP-latest-2-dashboard.png"
-                alt="ERP latest screen 1"
-                width={150}
-                height={300}
-                style={{ objectFit: "contain" }}
-              />
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-ERP-latest-4-inventaris-produk.png"
-                alt="ERP latest screen 2"
-                width={150}
-                height={300}
-                style={{ objectFit: "contain" }}
-              />
-              <Image
-                src="/assets/images/showcase-otoraja/otoraja-ERP-latest-5-stok-opname.png"
-                alt="ERP latest screen 3"
-                width={150}
-                height={300}
-                style={{ objectFit: "contain" }}
-              />
-            </div>
+            <Image
+              src="/assets/images/showcase-otoraja/otj_img6-erp-improvements.png"
+              alt="ERP smartphone improvements"
+              width={1200}
+              height={700}
+              className={styles.figureImage}
+            />
             <div className={styles.caption}>
               ERP after smartphone-first UX/UI improvements: dashboard, table as cards, and stock taking.
             </div>

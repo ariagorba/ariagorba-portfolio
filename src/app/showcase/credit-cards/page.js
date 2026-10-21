@@ -186,23 +186,21 @@ export default function CreditCardsCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-visaccc/workbench-ops.jpg"
-              alt="Operations workbench"
+              src="/assets/images/showcase-visaccc/ccc_img1-workbench-vs-desktop.png"
+              alt="Operations and Supervisor workbenches"
               width={1200}
-              height={500}
-              className={styles.figureImage}
+              height={700}
+              className={`${styles.figureImage} ${styles.desktopOnly}`}
             />
-            <div style={{ height: "1px", backgroundColor: "rgba(0,0,0,0.06)" }} />
             <Image
-              src="/assets/images/showcase-visaccc/workbench-spv.jpg"
-              alt="Supervisor workbench"
-              width={1200}
-              height={500}
-              className={styles.figureImage}
+              src="/assets/images/showcase-visaccc/ccc_img1-workbench-vs-mobile.png"
+              alt="Operations and Supervisor workbenches"
+              width={600}
+              height={900}
+              className={`${styles.figureImage} ${styles.mobileOnly}`}
             />
             <div className={styles.caption}>
-              Operations (top) and Supervisor (bottom) workbenches. Can you spot
-              the difference?
+              Operations and Supervisor workbenches. Can you spot the difference?
             </div>
           </div>
 
@@ -218,7 +216,7 @@ export default function CreditCardsCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-visaccc/app form checker.png"
+              src="/assets/images/showcase-visaccc/ccc_img2-form-checkbox.png"
               alt="Supervisor form with check marks"
               width={1200}
               height={700}
@@ -241,7 +239,7 @@ export default function CreditCardsCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-visaccc/approval cc template.png"
+              src="/assets/images/showcase-visaccc/ccc_img3-card-logo.png"
               alt="Card template step"
               width={1200}
               height={600}
@@ -265,7 +263,7 @@ export default function CreditCardsCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-visaccc/modal-delegation-popup.png"
+              src="/assets/images/showcase-visaccc/ccc_img4-delegate.png"
               alt="Delegation popup"
               width={1200}
               height={600}
@@ -278,7 +276,7 @@ export default function CreditCardsCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-visaccc/inbox-approval-notification.png"
+              src="/assets/images/showcase-visaccc/ccc_img5-notification.png"
               alt="Email notification"
               width={1200}
               height={600}
@@ -315,7 +313,7 @@ export default function CreditCardsCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-visaccc/working paper.png"
+              src="/assets/images/showcase-visaccc/ccc_img6-working-paper.png"
               alt="Working paper"
               width={1200}
               height={600}
@@ -328,19 +326,18 @@ export default function CreditCardsCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-visaccc/05a-decision-jr-analyst.png"
-              alt="Decision Jr Analyst"
+              src="/assets/images/showcase-visaccc/ccc_img7-modal-decision-desktop.png"
+              alt="Decision Action dialogs"
               width={1200}
-              height={400}
-              className={styles.figureImage}
+              height={600}
+              className={`${styles.figureImage} ${styles.desktopOnly}`}
             />
-            <div style={{ height: "1px", backgroundColor: "rgba(0,0,0,0.06)" }} />
             <Image
-              src="/assets/images/showcase-visaccc/05b-decision-analyst-manager.png"
-              alt="Decision Analyst Manager"
-              width={1200}
-              height={400}
-              className={styles.figureImage}
+              src="/assets/images/showcase-visaccc/ccc_img7-modal-decision-mobile.png"
+              alt="Decision Action dialogs"
+              width={600}
+              height={800}
+              className={`${styles.figureImage} ${styles.mobileOnly}`}
             />
             <div className={styles.caption}>
               Decision Action dialogs: Jr Analyst (top) and Analyst Manager

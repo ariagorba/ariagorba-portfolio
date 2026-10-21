@@ -185,7 +185,7 @@ export default function GravionCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-gravion/example-rule-spec-ato-json.jpg"
+              src="/assets/images/showcase-gravion/grv_img1-rule_ato_json.png"
               alt="Example rule spec in JSON"
               width={1200}
               height={700}
@@ -270,7 +270,7 @@ export default function GravionCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-gravion/fds-v1-example1.jpg"
+              src="/assets/images/showcase-gravion/grv_img2-example-rule-selector.png"
               alt="V1 rule builder"
               width={1200}
               height={700}
@@ -284,7 +284,7 @@ export default function GravionCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-gravion/fds-v1-example2.jpg"
+              src="/assets/images/showcase-gravion/grv_img3-example-rule-implemented.png"
               alt="Implemented rule in V1"
               width={1200}
               height={700}
@@ -310,7 +310,7 @@ export default function GravionCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-gravion/gravion-example-rule-logic-comparison.jpg"
+              src="/assets/images/showcase-gravion/grv_img4-rule-logic-comparison.png"
               alt="Expanded logic in V2"
               width={1200}
               height={700}
@@ -324,7 +324,7 @@ export default function GravionCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-gravion/gravion-example-rule-testing-result.jpg"
+              src="/assets/images/showcase-gravion/grv_img5-rule-test-result.png"
               alt="Integrated rule testing"
               width={1200}
               height={700}
@@ -373,7 +373,7 @@ export default function GravionCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-gravion/gravion-example-rule-logic-velocity.jpg"
+              src="/assets/images/showcase-gravion/grv_img6-real-config-percentile.png"
               alt="Velocity logic full screen"
               width={1200}
               height={700}
@@ -394,7 +394,7 @@ export default function GravionCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-gravion/gravion-drop-down-example.jpg"
+              src="/assets/images/showcase-gravion/grv_img7-dropdown-groupby.png"
               alt="Group By drop down"
               width={1200}
               height={700}
@@ -408,7 +408,7 @@ export default function GravionCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-gravion/gravion-example-approval-request.jpg"
+              src="/assets/images/showcase-gravion/grv_img8-approval-request.png"
               alt="Approval request screen"
               width={1200}
               height={700}
@@ -454,7 +454,7 @@ export default function GravionCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-gravion/before after estimate.jpeg"
+              src="/assets/images/showcase-gravion/grv_img9-before-after.jpeg"
               alt="Expert estimate before and after"
               width={1200}
               height={600}

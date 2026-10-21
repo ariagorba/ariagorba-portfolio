@@ -125,19 +125,18 @@ export default function LenderPortalCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-nikel/01a-home-before.png"
-              alt="Home before"
+              src="/assets/images/showcase-nikel/nkl_img1-dashboard-desktop.png"
+              alt="The home page before and after"
               width={1200}
-              height={500}
-              className={styles.figureImage}
+              height={700}
+              className={`${styles.figureImage} ${styles.desktopOnly}`}
             />
-            <div style={{ height: "1px", backgroundColor: "rgba(0,0,0,0.06)" }} />
             <Image
-              src="/assets/images/showcase-nikel/01b-home-after.png"
-              alt="Home after"
-              width={1200}
-              height={500}
-              className={styles.figureImage}
+              src="/assets/images/showcase-nikel/nkl_img1-dashboard-mobile.png"
+              alt="The home page before and after"
+              width={600}
+              height={900}
+              className={`${styles.figureImage} ${styles.mobileOnly}`}
             />
             <div className={styles.caption}>
               The home page before (top) and after (bottom)
@@ -180,19 +179,18 @@ export default function LenderPortalCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-nikel/02a-typography.png"
-              alt="Typography guidelines"
+              src="/assets/images/showcase-nikel/nkl_img2-foundations-desktop.png"
+              alt="Typography and color foundations"
               width={1200}
-              height={500}
-              className={styles.figureImage}
+              height={700}
+              className={`${styles.figureImage} ${styles.desktopOnly}`}
             />
-            <div style={{ height: "1px", backgroundColor: "rgba(0,0,0,0.06)" }} />
             <Image
-              src="/assets/images/showcase-nikel/02b-colors.png"
-              alt="Color style guidelines"
-              width={1200}
-              height={500}
-              className={styles.figureImage}
+              src="/assets/images/showcase-nikel/nkl_img2-foundations-mobile.png"
+              alt="Typography and color foundations"
+              width={600}
+              height={900}
+              className={`${styles.figureImage} ${styles.mobileOnly}`}
             />
             <div className={styles.caption}>
               Typography (top) and color foundations (bottom)
@@ -201,19 +199,18 @@ export default function LenderPortalCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-nikel/03a-navbar-breadcrumb.png"
-              alt="Navbar and breadcrumb"
+              src="/assets/images/showcase-nikel/nkl_img3-components-desktop.png"
+              alt="Navigation bar, breadcrumb, home cards, and tabs"
               width={1200}
-              height={300}
-              className={styles.figureImage}
+              height={700}
+              className={`${styles.figureImage} ${styles.desktopOnly}`}
             />
-            <div style={{ height: "1px", backgroundColor: "rgba(0,0,0,0.06)" }} />
             <Image
-              src="/assets/images/showcase-nikel/03c-home-cards.png"
-              alt="Home cards"
-              width={1200}
-              height={350}
-              className={styles.figureImage}
+              src="/assets/images/showcase-nikel/nkl_img3-components-mobile.png"
+              alt="Navigation bar, breadcrumb, home cards, and tabs"
+              width={600}
+              height={900}
+              className={`${styles.figureImage} ${styles.mobileOnly}`}
             />
             <div className={styles.caption}>
               Navigation bar and breadcrumb, home cards, and tabs
@@ -228,38 +225,36 @@ export default function LenderPortalCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-nikel/04a-list-before.png"
-              alt="List before"
+              src="/assets/images/showcase-nikel/nkl_img4-list-page-desktop.png"
+              alt="List page, before and after"
               width={1200}
-              height={450}
-              className={styles.figureImage}
+              height={700}
+              className={`${styles.figureImage} ${styles.desktopOnly}`}
             />
-            <div style={{ height: "1px", backgroundColor: "rgba(0,0,0,0.06)" }} />
             <Image
-              src="/assets/images/showcase-nikel/04b-list-after.png"
-              alt="List after"
-              width={1200}
-              height={450}
-              className={styles.figureImage}
+              src="/assets/images/showcase-nikel/nkl_img4-list-page-mobile.png"
+              alt="List page, before and after"
+              width={600}
+              height={900}
+              className={`${styles.figureImage} ${styles.mobileOnly}`}
             />
             <div className={styles.caption}>List page, before and after</div>
           </div>
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-nikel/04c-form-before.png"
-              alt="Form before"
+              src="/assets/images/showcase-nikel/nkl_img5-form-page-desktop.png"
+              alt="Form page, before and after"
               width={1200}
-              height={450}
-              className={styles.figureImage}
+              height={700}
+              className={`${styles.figureImage} ${styles.desktopOnly}`}
             />
-            <div style={{ height: "1px", backgroundColor: "rgba(0,0,0,0.06)" }} />
             <Image
-              src="/assets/images/showcase-nikel/04d-form-after.png"
-              alt="Form after"
-              width={1200}
-              height={450}
-              className={styles.figureImage}
+              src="/assets/images/showcase-nikel/nkl_img5-form-page-mobile.png"
+              alt="Form page, before and after"
+              width={600}
+              height={900}
+              className={`${styles.figureImage} ${styles.mobileOnly}`}
             />
             <div className={styles.caption}>Form page, before and after</div>
           </div>
@@ -308,7 +303,7 @@ export default function LenderPortalCaseStudy() {
 
           <div className={styles.figure}>
             <Image
-              src="/assets/images/showcase-nikel/nikel design system project wbs.png"
+              src="/assets/images/showcase-nikel/nkl_img6-wbs-sheet.png"
               alt="Project WBS sheet"
               width={1200}
               height={600}

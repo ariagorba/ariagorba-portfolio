@@ -19,19 +19,18 @@ export default function Navbar() {
         </Link>
 
         <div className={styles.navRight}>
-          <nav className={styles.desktopLinks} aria-label="Main Navigation">
+          <nav className={styles.desktopMenu} aria-label="Main Navigation">
             <a
               href="https://drive.google.com/file/d/1_SqEmjltjW6XL8qUI2uBgyW4oH1jcvqT/view?usp=drive_link"
-              className={styles.navLink}
+              className={styles.secondaryBtn}
               target="_blank"
               rel="noopener noreferrer"
             >
               Download Resume
             </a>
-            <span className={styles.divider}>|</span>
             <a
               href="https://www.linkedin.com/in/ariagorba"
-              className={styles.navLink}
+              className={styles.secondaryBtn}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -41,7 +40,7 @@ export default function Navbar() {
 
           <a
             href="mailto:aria.hamdani@gmail.com"
-            className={styles.contactBtn}
+            className={styles.primaryBtn}
             aria-label="Get in touch"
           >
             <span className={styles.desktopBtnText}>Get in touch</span>

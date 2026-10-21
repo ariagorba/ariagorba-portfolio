@@ -247,8 +247,24 @@
   height: 16px;
 }
 
+.desktopOnly {
+  display: block;
+}
+
+.mobileOnly {
+  display: none;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 767px) {
+  .desktopOnly {
+    display: none !important;
+  }
+
+  .mobileOnly {
+    display: block !important;
+  }
+
   .heroHeader {
     padding-top: 1.5rem;
     padding-bottom: 2.5rem;
