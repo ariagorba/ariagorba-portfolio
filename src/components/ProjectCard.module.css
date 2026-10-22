@@ -59,6 +59,20 @@
   flex-grow: 1;
 }
 
+.readMore {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+.card:hover .readMore {
+  color: #000000;
+}
+
 .tagList {
   display: flex;
   flex-wrap: wrap;

@@ -6,29 +6,29 @@ import styles from "./page.module.css";
 const projects = [
   {
     id: "gravion",
-    title: "A No–Code Rule Builder for Fraud Teams",
+    title: "A No–Code Rule Builder for Risk & Fraud Teams",
     description:
-      "At Gravion, I designed a no-code fraud rule builder. It was estimated during pre-launch to cut rule creation from about 10 minutes to 2 for most rules.",
+      "My design approach cut rule creation from around 10 to about 2 minutes per expert’s estimation.",
     tags: ["UI", "UX"],
     imageSrc: "/assets/images/home-cards/home-card-gravion.png",
-    imageAlt: "A No-Code Rule Builder for Fraud Teams preview",
+    imageAlt: "A No-Code Rule Builder for Risk & Fraud Teams preview",
     href: "/showcase/gravion",
   },
   {
     id: "otoraja",
-    title: "Make the Product Work the Way Users Already Work",
+    title: "Making ERP & POS work for MSME Workshop Owners",
     description:
-      "At Otoraja, I redesigned the POS and ERP around how workshop owners already work. The month after the last release, organic referrals rose from 0% to 3% of inbound demo requests.",
+      "Improving intuitiveness through research-based design. Inbound demo requests rose from 0% to 3%.",
     tags: ["UI", "UX", "Research", "Product Management"],
     imageSrc: "/assets/images/home-cards/home-card-otoraja.png",
-    imageAlt: "Make the Product Work the Way Users Already Work preview",
+    imageAlt: "Making ERP & POS work for MSME Workshop Owners preview",
     href: "/showcase/otoraja",
   },
   {
     id: "credit-cards",
     title: "Role–Based Approval Workflow for Corporate Credit Cards",
     description:
-      "In one week, I designed the screens and prototype for a multi-role approval workflow for corporate credit cards, pitched to a bank and a global payments network.",
+      "In 1 week, I designed a Figma prototype to pitch a multi-role approval workflow for credit cards to a bank.",
     tags: ["UI", "UX"],
     imageSrc: "/assets/images/home-cards/home-card-ccc.png",
     imageAlt: "Role-Based Approval Workflow for Corporate Credit Cards preview",
@@ -38,7 +38,7 @@ const projects = [
     id: "lender-portal",
     title: "Rebuilding a Lender Portal on a Design System",
     description:
-      "I designed a 27-component design system for a lender portal and led its delivery, keeping the familiar look so existing users could adopt it without relearning.",
+      "I led the design system for P2P lending and its delivery, keeping the familiar look for smoother adoption.",
     tags: ["UI", "Design System", "Product Management"],
     imageSrc: "/assets/images/home-cards/home-card-nikel.png",
     imageAlt: "Rebuilding a Lender Portal on a Design System preview",
@@ -55,7 +55,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className={styles.heroSection} aria-labelledby="hero-title">
           <h1 id="hero-title" className={styles.heroTitle}>
-            I&apos;m a Product / UX Designer who designs for adoption.
+            I&apos;m a Product / UX Designer who aims for adoption.
           </h1>
           <p className={styles.heroBio}>
             My goal in designing any product is always the same:{" "}

@@ -9,7 +9,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata = {
   title: "Aria Gorba — Product / UX Designer",
-  description: "Product / UX Designer who designs for adoption. Getting products used, not just shipped.",
+  description: "Product / UX Designer who aims for adoption. Getting products used, not just shipped.",
 };
 
 export default function RootLayout({ children }) {

@@ -24,7 +24,12 @@ export default function ProjectCard({
       </div>
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
+        <p className={styles.description}>
+          {description}{" "}
+          <span className={styles.readMore}>
+            Read more <span aria-hidden="true">&rarr;</span>
+          </span>
+        </p>
         <ul className={styles.tagList} aria-label="Project tags">
           {tags.map((tag, idx) => (
             <li key={idx} className={styles.tag}>

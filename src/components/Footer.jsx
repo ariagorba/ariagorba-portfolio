@@ -7,8 +7,8 @@ export default function Footer() {
         <div className={styles.leftCol}>
           <p className={styles.disclaimer}>
             I built this portfolio website using a combination of AI and manual
-            judgements. Vibe design tools used were Figma with Claude via MCP, and
-            vibe coding tools used were v0 and Vercel — all free tier.
+            judgements. Designed in Figma + Claude via MCP, vibe coded with
+            Antigravity and Vercel — all free tier.
           </p>
         </div>
 

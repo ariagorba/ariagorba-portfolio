@@ -5,7 +5,7 @@ import BackToTop from "@/components/BackToTop";
 import styles from "@/components/CaseStudy.module.css";
 
 export const metadata = {
-  title: "Make the Product Work the Way Users Already Work — Aria Gorba",
+  title: "Making ERP & POS work for MSME Workshop Owners — Aria Gorba",
   description:
     "Case study on redesigning POS and ERP for MSME motorcycle workshops around owners' daily habits.",
 };
@@ -21,7 +21,7 @@ export default function OtorajaCaseStudy() {
         <Navbar />
         <header className={styles.heroContent}>
           <h1 className={styles.title}>
-            Make the Product Work the Way Users Already Work
+            Making ERP &amp; POS work for MSME Workshop Owners
           </h1>
           <p className={styles.subtitle}>
             After each release, existing users gave positive feedback on the
