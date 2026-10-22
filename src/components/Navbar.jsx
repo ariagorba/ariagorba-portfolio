@@ -2,11 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 
-export default function Navbar() {
+export default function Navbar({ showHomeOnMobile = false }) {
   return (
     <nav className={styles.header} aria-label="Main Navigation">
       <div className={styles.navContainer}>
         <Link href="/" className={styles.brand}>
+          {showHomeOnMobile && (
+            <Image
+              src="/assets/icons/home.svg"
+              alt="Home"
+              width={20}
+              height={20}
+              className={styles.mobileHomeIcon}
+            />
+          )}
           <Image
             src="/assets/images/profile-picture.png"
             alt="Aria Gorba"

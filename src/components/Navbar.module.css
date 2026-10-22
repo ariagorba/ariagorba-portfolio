@@ -33,6 +33,10 @@
   display: block;
 }
 
+.mobileHomeIcon {
+  display: none;
+}
+
 .navRight {
   display: flex;
   align-items: center;
@@ -118,6 +122,12 @@
 
   .avatar {
     display: none;
+  }
+
+  .mobileHomeIcon {
+    display: block;
+    width: 20px;
+    height: 20px;
   }
 
   .brand {
