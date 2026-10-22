@@ -526,13 +526,10 @@ export default function GravionCaseStudy() {
                   height={600}
                   className={styles.figureImage}
                 />
-                <div className={styles.caption}>
-                  Expert estimate, pre-launch
-                </div>
               </div>
             </div>
 
-            <h3 className={styles.subTitle}>V1 (ALTO)</h3>
+            <h4 className={styles.h4}>V1 (ALTO)</h4>
             <p className={styles.paragraph}>
               ALTO&apos;s fraud ops team used the first version through the end
               of the project. No usability issues were reported during the
@@ -540,7 +537,7 @@ export default function GravionCaseStudy() {
               using it afterward.
             </p>
 
-            <h3 className={styles.subTitle}>V2 (Gravion)</h3>
+            <h4 className={styles.h4}>V2 (Gravion)</h4>
             <p className={styles.paragraph}>
               Our Product Manager, a former risk and fraud manager, estimated
               that a simple rule could be built in about 2 minutes, compared with
@@ -564,7 +561,7 @@ export default function GravionCaseStudy() {
               </div>
             </div>
 
-            <h3 className={styles.subTitle}>Scope</h3>
+            <h4 className={styles.h4}>Scope</h4>
             <p className={styles.paragraph}>
               The builder covers most rule types, not all. When a new fraud
               pattern falls outside what the interface supports, engineering
@@ -602,10 +599,13 @@ export default function GravionCaseStudy() {
               baseline would be a measurement, not an estimate. This goes for
               both version of the FDS.
             </p>
-
-            <BackToTop />
           </div>
         </section>
+
+        {/* Back to top */}
+        <div className={styles.backToTopContainer}>
+          <BackToTop />
+        </div>
       </main>
 
       <Footer />

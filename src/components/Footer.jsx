@@ -8,7 +8,7 @@ export default function Footer() {
           <p className={styles.disclaimer}>
             I built this portfolio website using a combination of AI and manual
             judgements. Designed in Figma + Claude via MCP, vibe coded with
-            Antigravity and Vercel — all free tier.
+            Antigravity and Vercel.
           </p>
         </div>
 

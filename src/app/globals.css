@@ -1,18 +1,44 @@
 :root {
-  --bg-page: #FAF9FB;
-  --bg-surface: #FFFFFF;
-  --bg-footer: #EAE9F0;
-  --bg-tag: #F1F1F4;
-  --text-tag: #4A4A5A;
-  --text-primary: #121217;
-  --text-secondary: #484856;
-  --text-muted: #6B6B7B;
+  /* Typography linked to Next.js Google Fonts without cyclic recursion */
+  --font-heading: var(--font-plus-jakarta), "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-body: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Figma Design Tokens */
+  --text-dark-1: #111114;
+  --text-dark-2: #484848;
+  --text-dark-3: #5b5b60;
+  --text-secondary-inverse: #dddddd;
+  --text-white: #ffffff;
+  --text-info: #006dc0;
+  --text-yellow: #cbb453;
+
+  --surface-page: #f8f7fc;
+  --surface-card-regular: #ffffff;
+  --border-card-regular: #eeedf4;
+  --surface-dark: #1a1a1a;
+  --surface-label: #efeff0;
+  --surface-menu-cta: #1a1a1a;
+  --surface-menu-cta-hover: #2a2a2a;
+  --surface-card-info: #e3f9fe;
+  --border-card-info: #c3eaf3;
+  --surface-card-yellow: #f8f5e8;
+  --border-card-yellow: #e7ddb1;
+
+  /* Aliases */
+  --bg-page: var(--surface-page);
+  --bg-surface: var(--surface-card-regular);
+  --bg-footer: #eeedf4;
+  --bg-tag: var(--surface-label);
+  --text-tag: var(--text-dark-1);
+  --text-primary: var(--text-dark-1);
+  --text-secondary: var(--text-dark-2);
+  --text-muted: var(--text-dark-3);
   --border-subtle: rgba(0, 0, 0, 0.08);
-  --border-card: #ECECEF;
-  --btn-primary-bg: #16161A;
-  --btn-primary-text: #FFFFFF;
-  --btn-primary-hover: #2A2A32;
-  --max-content-width: 1040px;
+  --border-card: var(--border-card-regular);
+  --btn-primary-bg: #1a1a1a;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #2a2a32;
+  --max-content-width: 1200px;
 }
 
 *, *::before, *::after {
@@ -29,11 +55,24 @@ html {
 }
 
 body {
-  background-color: var(--bg-page);
-  color: var(--text-primary);
-  font-family: inherit, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--surface-page);
+  color: var(--text-dark-1);
+  font-family: var(--font-body), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.5;
   min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading), system-ui, -apple-system, sans-serif;
+}
+
+h4 {
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
 }
 
 a {

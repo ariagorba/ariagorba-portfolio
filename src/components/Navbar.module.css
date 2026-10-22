@@ -16,9 +16,10 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.125rem;
-  color: var(--text-primary);
+  font-size: 1.75rem;
+  color: var(--text-dark-1);
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -46,7 +47,7 @@
 .desktopMenu {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 /* Secondary pill button style for Resume & LinkedIn */
@@ -55,21 +56,23 @@
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
-  color: var(--text-primary);
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  font-size: 0.9375rem;
-  font-weight: 600;
-  padding: 0.625rem 1.25rem;
-  border-radius: 9999px;
+  color: var(--text-dark-3);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
   text-decoration: none;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease, color 0.2s ease;
   white-space: nowrap;
 }
 
 .secondaryBtn:hover {
   background-color: #F8F8FA;
-  border-color: rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.3);
+  color: var(--text-dark-1);
   transform: translateY(-1px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
@@ -84,12 +87,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--btn-primary-bg);
-  color: var(--btn-primary-text);
-  font-size: 0.9375rem;
-  font-weight: 600;
-  padding: 0.625rem 1.25rem;
-  border-radius: 9999px;
+  background-color: var(--surface-menu-cta);
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 999px;
   text-decoration: none;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
@@ -97,7 +101,7 @@
 }
 
 .primaryBtn:hover {
-  background-color: var(--btn-primary-hover);
+  background-color: #2A2A2A;
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -131,7 +135,7 @@
   }
 
   .brand {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .desktopMenu {
@@ -147,7 +151,7 @@
   }
 
   .primaryBtn {
-    padding: 0.5rem 1.125rem;
-    font-size: 0.875rem;
+    padding: 6px 16px;
+    font-size: 1rem;
   }
 }
