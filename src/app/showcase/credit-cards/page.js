@@ -14,14 +14,13 @@ export const metadata = {
 export default function CreditCardsCaseStudy() {
   return (
     <div className={styles.page}>
-      <Navbar />
-
-      {/* Hero Header */}
-      <header
-        className={styles.heroHeader}
+      {/* Hero Header with seamless top navbar */}
+      <div
+        className={styles.heroWrapper}
         style={{ backgroundColor: "#EBF3FA" }}
       >
-        <div className={styles.heroContent}>
+        <Navbar />
+        <header className={styles.heroContent}>
           <h1 className={styles.title}>
             Role–Based Approval Workflow for Corporate Credit Cards
           </h1>
@@ -72,8 +71,8 @@ export default function CreditCardsCaseStudy() {
               design was never built, so none of it was tested with real users.
             </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
 
       {/* Article Content */}
       <main className={styles.articleBody}>

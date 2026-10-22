@@ -13,14 +13,13 @@ export const metadata = {
 export default function OtorajaCaseStudy() {
   return (
     <div className={styles.page}>
-      <Navbar />
-
-      {/* Hero Header */}
-      <header
-        className={styles.heroHeader}
-        style={{ backgroundColor: "#F7F1EC" }}
+      {/* Hero Header with seamless top navbar */}
+      <div
+        className={styles.heroWrapper}
+        style={{ backgroundColor: "#F5EDE9" }}
       >
-        <div className={styles.heroContent}>
+        <Navbar />
+        <header className={styles.heroContent}>
           <h1 className={styles.title}>
             Make the Product Work the Way Users Already Work
           </h1>
@@ -71,8 +70,8 @@ export default function OtorajaCaseStudy() {
               after each release.
             </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
 
       {/* Article Content */}
       <main className={styles.articleBody}>

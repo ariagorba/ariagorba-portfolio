@@ -5,7 +5,7 @@ import BackToTop from "@/components/BackToTop";
 import styles from "@/components/CaseStudy.module.css";
 
 export const metadata = {
-  title: "A No–Code Rule Builder for Fraud Teams — Aria Gorba",
+  title: "A No–Code Rule Builder for Risk & Fraud Teams — Aria Gorba",
   description:
     "Case study on designing a no-code fraud rule builder estimated to cut rule creation from 10 minutes to 2 minutes.",
 };
@@ -13,16 +13,15 @@ export const metadata = {
 export default function GravionCaseStudy() {
   return (
     <div className={styles.page}>
-      <Navbar />
-
-      {/* Hero Header */}
-      <header
-        className={styles.heroHeader}
-        style={{ backgroundColor: "#ECEAF2" }}
+      {/* Hero Header with seamless top navbar */}
+      <div
+        className={styles.heroWrapper}
+        style={{ backgroundColor: "#EDEBF4" }}
       >
-        <div className={styles.heroContent}>
+        <Navbar />
+        <header className={styles.heroContent}>
           <h1 className={styles.title}>
-            A No–Code Rule Builder for Fraud Teams
+            A No–Code Rule Builder for Risk &amp; Fraud Teams
           </h1>
           <p className={styles.subtitle}>
             A no-code rule builder that our in-house risk expert estimated would
@@ -70,8 +69,8 @@ export default function GravionCaseStudy() {
               users.
             </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
 
       {/* Article Content */}
       <main className={styles.articleBody}>

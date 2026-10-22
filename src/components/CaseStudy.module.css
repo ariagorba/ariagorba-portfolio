@@ -3,9 +3,14 @@
 }
 
 /* Hero Header */
+.heroWrapper {
+  width: 100%;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 .heroHeader {
   width: 100%;
-  padding-top: 2rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -13,7 +18,7 @@
 .heroContent {
   max-width: var(--max-content-width);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 2.25rem 1.5rem 0;
 }
 
 .title {
@@ -265,13 +270,13 @@
     display: block !important;
   }
 
+  .heroWrapper,
   .heroHeader {
-    padding-top: 1.5rem;
     padding-bottom: 2.5rem;
   }
 
   .heroContent {
-    padding: 0 1.25rem;
+    padding: 1rem 1.25rem 0;
   }
 
   .title {

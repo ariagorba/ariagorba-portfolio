@@ -13,14 +13,13 @@ export const metadata = {
 export default function LenderPortalCaseStudy() {
   return (
     <div className={styles.page}>
-      <Navbar />
-
-      {/* Hero Header */}
-      <header
-        className={styles.heroHeader}
+      {/* Hero Header with seamless top navbar */}
+      <div
+        className={styles.heroWrapper}
         style={{ backgroundColor: "#ECF4F0" }}
       >
-        <div className={styles.heroContent}>
+        <Navbar />
+        <header className={styles.heroContent}>
           <h1 className={styles.title}>
             Rebuilding a Lender Portal on a Design System
           </h1>
@@ -73,8 +72,8 @@ export default function LenderPortalCaseStudy() {
               the refresh made navigation easier.
             </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
 
       {/* Article Content */}
       <main className={styles.articleBody}>

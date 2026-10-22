@@ -4,7 +4,7 @@ import styles from "./Navbar.module.css";
 
 export default function Navbar() {
   return (
-    <header className={styles.header}>
+    <nav className={styles.header} aria-label="Main Navigation">
       <div className={styles.navContainer}>
         <Link href="/" className={styles.brand}>
           <Image
@@ -19,7 +19,7 @@ export default function Navbar() {
         </Link>
 
         <div className={styles.navRight}>
-          <nav className={styles.desktopMenu} aria-label="Main Navigation">
+          <div className={styles.desktopMenu}>
             <a
               href="https://drive.google.com/file/d/1_SqEmjltjW6XL8qUI2uBgyW4oH1jcvqT/view?usp=drive_link"
               className={styles.secondaryBtn}
@@ -36,7 +36,7 @@ export default function Navbar() {
             >
               Linkedin
             </a>
-          </nav>
+          </div>
 
           <a
             href="mailto:aria.hamdani@gmail.com"
@@ -48,6 +48,6 @@ export default function Navbar() {
           </a>
         </div>
       </div>
-    </header>
+    </nav>
   );
 }
