@@ -7,29 +7,42 @@ import styles from "@/components/CaseStudy.module.css";
 export const metadata = {
   title: "A No–Code Rule Builder for Risk & Fraud Teams — Aria Gorba",
   description:
-    "Case study on designing a no-code fraud rule builder estimated to cut rule creation from 10 minutes to 2 minutes.",
+    "Case study on designing a no-code fraud rule builder estimated to cut rule creation from ~10 minutes to ~2 minutes.",
 };
 
 export default function GravionCaseStudy() {
   return (
     <div className={styles.page}>
-      {/* Hero Header with seamless top navbar */}
-      <div
-        className={styles.heroWrapper}
-        style={{ backgroundColor: "#EDEBF4" }}
-      >
+      {/* White top navigation bar */}
+      <div className={styles.navWrapper}>
         <Navbar showHomeOnMobile={true} />
-        <header className={styles.heroContent}>
+      </div>
+
+      {/* Hero Header */}
+      <header className={styles.heroWrapper}>
+        <div className={styles.heroContent}>
           <h1 className={styles.title}>
             A No–Code Rule Builder for Risk &amp; Fraud Teams
           </h1>
-          <p className={styles.subtitle}>
+
+          {/* Desktop Subtitle */}
+          <p className={`${styles.subtitle} ${styles.desktopOnly}`}>
             Using this design approach, our in-house risk expert estimated would
             cut fraud rule creation from ~10 minutes to ~2, with no engineering
             needed for most rules.
           </p>
 
-          <div className={styles.metaCard}>
+          {/* Mobile Subtitle */}
+          <p className={`${styles.subtitle} ${styles.mobileOnly}`}>
+            A no-code rule builder that our in-house risk expert estimated would
+            cut fraud rule creation from ~10 minutes to ~2, with no engineering
+            needed for most rules.
+          </p>
+
+          <hr className={styles.heroDivider} />
+
+          {/* Desktop Metadata Grid */}
+          <div className={`${styles.metaSection} ${styles.desktopOnly}`}>
             <div className={styles.metaCol}>
               <div className={styles.metaItem}>
                 <span className={styles.metaLabel}>Company</span>
@@ -45,7 +58,7 @@ export default function GravionCaseStudy() {
               <div className={styles.metaItem}>
                 <span className={styles.metaLabel}>Product</span>
                 <span className={styles.metaValue}>
-                  Gravion - Fraud Detection System
+                  FDS (Fraud Detection System)
                 </span>
               </div>
               <div className={styles.metaItem}>
@@ -58,7 +71,33 @@ export default function GravionCaseStudy() {
             </div>
           </div>
 
-          <div className={styles.summaryBox}>
+          {/* Mobile Metadata List */}
+          <div className={`${styles.metaSection} ${styles.mobileOnly}`}>
+            <div className={styles.metaItem}>
+              <span className={styles.metaLabel}>Company</span>
+              <span className={styles.metaValue}>Gravion</span>
+            </div>
+            <div className={styles.metaItem}>
+              <span className={styles.metaLabel}>Product</span>
+              <span className={styles.metaValue}>
+                FDS (Fraud Detection System)
+              </span>
+            </div>
+            <div className={styles.metaItem}>
+              <span className={styles.metaLabel}>Role</span>
+              <span className={styles.metaValue}>Senior UX Designer</span>
+            </div>
+            <div className={styles.metaItem}>
+              <span className={styles.metaLabel}>Timeline</span>
+              <ul className={styles.metaList}>
+                <li>Phase 1: 2023 (3 months)</li>
+                <li>Phase 2: 2025 - 2026 (6 months)</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Problem - What I did - Result White Card */}
+          <div className={styles.summaryCard}>
             <div className={styles.summaryRow}>
               <span className={styles.summaryLabel}>Problem</span>
               <span>
@@ -82,17 +121,17 @@ export default function GravionCaseStudy() {
               </span>
             </div>
           </div>
-        </header>
-      </div>
+        </div>
+      </header>
 
       {/* Article Content */}
       <main className={styles.articleBody}>
-        {/* Background */}
+        {/* 1. Background */}
         <section className={styles.section}>
           <div className={styles.sectionSidebar}>
             <div className={styles.sectionEyebrow}>
               <Image
-                src="/assets/icons/pointing-right.svg"
+                src="/assets/icons/pointing-grey.svg"
                 alt="Pointer"
                 width={14}
                 height={14}
@@ -104,23 +143,25 @@ export default function GravionCaseStudy() {
           <div className={styles.sectionMain}>
             <p className={styles.paragraph}>
               The no-code rule builder began in 2023 as a project for ALTO, a
-              client of Nikel&apos;s. In 2025, Nikel split into two companies: Gravion
-              (fraud detection) and Ulysses Two (lending technology). The FDS
-              development continued at Gravion to broaden its capabilities, which
-              expanded what the rule builder needed to do. For both phases, the
-              primary users were fraud ops / risk teams at financial
-              institutions.
+              client of Nikel&apos;s. In 2025, Nikel split into two companies and
+              the FDS development continued at Gravion which expanded its
+              capabilities, including the rule builder. The primary users were
+              always the fraud ops / risk teams at financial institutions.
+              Gravion shut down before launch.
             </p>
-            <p className={styles.paragraph}>Gravion shut down before launch.</p>
+            <p className={styles.paragraph}>
+              This case study focuses on the rule creation UI. Approval and
+              deployment flows aren&apos;t covered here.
+            </p>
           </div>
         </section>
 
-        {/* Discovery */}
+        {/* 2. Discovery */}
         <section className={styles.section}>
           <div className={styles.sectionSidebar}>
             <div className={styles.sectionEyebrow}>
               <Image
-                src="/assets/icons/pointing-right.svg"
+                src="/assets/icons/pointing-grey.svg"
                 alt="Pointer"
                 width={14}
                 height={14}
@@ -143,31 +184,28 @@ export default function GravionCaseStudy() {
 
             <div className={styles.callout}>
               <Image
-                src="/assets/icons/idea.svg"
-                alt="Idea icon"
-                width={20}
-                height={20}
+                src="/assets/icons/alert-orange.svg"
+                alt="Alert"
+                width={22}
+                height={22}
                 className={styles.calloutIcon}
               />
               <div className={styles.calloutText}>
                 Writing a fraud rule takes time before it can be implemented.
-                Things to consider are rule complexity, testing, and approval
-                process.
               </div>
             </div>
 
             <div className={styles.callout}>
               <Image
-                src="/assets/icons/idea.svg"
-                alt="Idea icon"
-                width={20}
-                height={20}
+                src="/assets/icons/alert-orange.svg"
+                alt="Alert"
+                width={22}
+                height={22}
                 className={styles.calloutIcon}
               />
               <div className={styles.calloutText}>
-                Fraud ops teams couldn&apos;t act independently on rule changes.
-                Rule implementation requires involvement of the engineering
-                team.
+                Implementation of rule change requires involvement of the
+                engineering team.
               </div>
             </div>
 
@@ -181,12 +219,12 @@ export default function GravionCaseStudy() {
           </div>
         </section>
 
-        {/* Define */}
+        {/* 3. Define */}
         <section className={styles.section}>
           <div className={styles.sectionSidebar}>
             <div className={styles.sectionEyebrow}>
               <Image
-                src="/assets/icons/pointing-right.svg"
+                src="/assets/icons/pointing-grey.svg"
                 alt="Pointer"
                 width={14}
                 height={14}
@@ -200,16 +238,11 @@ export default function GravionCaseStudy() {
               Exploring fraud rule writing and implementation methods.
             </h2>
             <p className={styles.paragraph}>
-              In a mature environment, the fraud rule is submitted as an .md
-              file, which offers strong version control and is engineer-friendly,
-              but requires the rule to be validated manually.
-            </p>
-            <p className={styles.paragraph}>
-              If the org uses a low-code rule engine, the specification is
-              submitted as a .json or .yaml file. It&apos;s easily tested, and
-              the rule engine reads the file and deploys the change instantly, but
-              there&apos;s a code breakage risk if the file isn&apos;t written
-              correctly.
+              In mature environments, fraud rules are submitted as .md files,
+              offering better version control but requiring manual validation. In
+              low-code environments, .json files can be tested and deployed
+              instantly through the rule engine, but incorrect formatting risks
+              breaking the system.
             </p>
 
             <div className={styles.figure}>
@@ -221,41 +254,39 @@ export default function GravionCaseStudy() {
                 className={styles.figureImage}
               />
               <div className={styles.caption}>
-                Example of a fraud rule written in .json format to detect Account
-                Take Over patterns.
+                Example of Account Take Over fraud rule written in .json format.
               </div>
             </div>
 
             <p className={styles.paragraph}>
-              I leaned toward the low-code method, since the rule engine handles
-              implementation automatically, directly solving the engineering
-              bottleneck from Discovery. That shifted the real problem: the rule
-              still had to be written correctly by hand, and that&apos;s where
-              risk opened up.
+              I leaned toward low-code method, since the rule engine can handle
+              the implementation, directly solving the engineering bottleneck
+              from Discovery. That shifted the real problem: the rule still had
+              to be written correctly by hand, and that&apos;s where risk opened
+              up.
             </p>
 
             <div className={styles.callout}>
               <Image
                 src="/assets/icons/info.svg"
-                alt="Info icon"
-                width={20}
-                height={20}
+                alt="Info"
+                width={22}
+                height={22}
                 className={styles.calloutIcon}
               />
               <div className={styles.calloutText}>
                 <div className={styles.calloutTitle}>Problem Statement</div>
-                Fraud operations analysts are prone to typographical errors when
-                crafting complex rules. We assumed a text-heavy input interface
-                adds to their cognitive load.
+                Fraud analysts are prone to typographical errors when crafting
+                complex rules.
               </div>
             </div>
 
             <div className={styles.callout}>
               <Image
-                src="/assets/icons/chat-question.svg"
-                alt="Question icon"
-                width={20}
-                height={20}
+                src="/assets/icons/chat-question-blue.svg"
+                alt="Question"
+                width={22}
+                height={22}
                 className={styles.calloutIcon}
               />
               <div className={styles.calloutText}>
@@ -275,12 +306,12 @@ export default function GravionCaseStudy() {
           </div>
         </section>
 
-        {/* Develop */}
+        {/* 4. Develop */}
         <section className={styles.section}>
           <div className={styles.sectionSidebar}>
             <div className={styles.sectionEyebrow}>
               <Image
-                src="/assets/icons/pointing-right.svg"
+                src="/assets/icons/pointing-grey.svg"
                 alt="Pointer"
                 width={14}
                 height={14}
@@ -291,15 +322,13 @@ export default function GravionCaseStudy() {
 
           <div className={styles.sectionMain}>
             <h2 className={styles.sectionTitle}>
-              The first version put the idea in front of real users.
+              The first version of the no-code rule builder.
             </h2>
             <p className={styles.paragraph}>
-              I built the first version as a no-code, dropdown-based rule builder,
-              directly from what I&apos;d learned in the focus group and
-              follow-up interviews. Instead of typing a rule as code, fraud ops
-              could construct one by selecting conditions from a set of dropdowns.
-              This was aimed at the typing errors and cognitive load described in
-              the Problem Statement.
+              Based on the focus group and follow-up interviews, I designed the
+              first version by focusing to reduce input. I used a dropdown-based
+              query builder component as the base and extended it&apos;s
+              functionality to cater fraud rule building.
             </p>
 
             <div className={styles.figureGrid}>
@@ -312,8 +341,8 @@ export default function GravionCaseStudy() {
                   className={styles.figureImage}
                 />
                 <div className={styles.caption}>
-                  V1 rule builder setup allows the user to write fraud rule without
-                  coding.
+                  V1 rule builder allowed users to write fraud rule with minimum
+                  input and reduce typing mistake.
                 </div>
               </div>
 
@@ -326,22 +355,21 @@ export default function GravionCaseStudy() {
                   className={styles.figureImage}
                 />
                 <div className={styles.caption}>
-                  What the fraud rule looked like in V1 after it has been
-                  implemented.
+                  What the V1 fraud rule looked like after being configured using
+                  the dropdowns.
                 </div>
               </div>
             </div>
 
-            <h3 className={styles.subTitle}>The second version scaled it.</h3>
+            <h3 className={styles.subTitle}>The second version at Gravion scaled it.</h3>
             <p className={styles.paragraph}>
-              At Gravion, our Product Manager was also our subject matter
-              expert: a former risk and fraud manager and Certified Risk
-              Management Professional. He benchmarked other fraud detection
-              platforms and recommended expanding what the FDS could do. For the
-              rule builder, that meant handling more complex rule logic and
-              combinations of existing rules. My design challenge was keeping the
-              dropdown flow simple as the rules got more complex. The Product
-              Manager&apos;s PRDs showed me what the UI needed to achieve.
+              Our PM was also our SME: a former risk and fraud manager and
+              Certified Risk Management Professional. He prioritized current fraud
+              scenarios that expanded the FDS capabilities. The rule builder
+              must handle more advanced rule logics compared to V1. My design
+              challenge was keeping the dropdown flow simple as the rules got
+              more complex. The PM&apos;s PRDs guided me on what the UI needed to
+              achieve.
             </p>
 
             <div className={styles.figureGrid}>
@@ -368,27 +396,27 @@ export default function GravionCaseStudy() {
                   className={styles.figureImage}
                 />
                 <div className={styles.caption}>
-                  The rule testing in V2 was integrated into the creation process
-                  compared to separated in V1.
+                  The rule testing in V2 was integrated into the creation
+                  process compared to separated in V1.
                 </div>
               </div>
             </div>
 
             <p className={styles.paragraph}>
-              Before launch, our Product Manager and a software implementor
-              reviewed the tool and gave positive feedback on its usability. The
-              Product Manager&apos;s walkthrough of the rule creation flow gave
-              us our first time estimate, which I cover in the Outcome section.
+              Before launch, our PM and a software implementor reviewed the tool
+              and gave positive feedback on its usability. The PM&apos;s
+              walkthrough of the rule creation flow gave us our first time
+              estimate, which I cover in the Outcome section.
             </p>
           </div>
         </section>
 
-        {/* Deliver */}
+        {/* 5. Deliver */}
         <section className={styles.section}>
           <div className={styles.sectionSidebar}>
             <div className={styles.sectionEyebrow}>
               <Image
-                src="/assets/icons/pointing-right.svg"
+                src="/assets/icons/pointing-grey.svg"
                 alt="Pointer"
                 width={14}
                 height={14}
@@ -402,16 +430,12 @@ export default function GravionCaseStudy() {
               More choosing and less typing.
             </h2>
             <p className={styles.paragraph}>
-              This case study focuses on the rule creation UI. Approval and
-              deployment flows aren&apos;t covered here.
-            </p>
-            <p className={styles.paragraph}>
-              The final rule builder replaces hand-typed queries with a guided
-              flow. Analysts select each part of a rule from dropdowns, so the
-              structure of the rule is valid before it is saved. A rule starts with
-              basic information and base conditions. The analyst can then add
-              advanced rules, which need further setup, and finish with a time
-              frame, a decisioning method, and an automated response.
+              My design approach provided a guided flow for analysts, so the
+              structure of the rule is valid before it is saved. The Advanced
+              Rule is where V2’s capability became challenging. I had to make a
+              UI that changed when a specific option in the dropdown is
+              selected. The decision was made along side the PM and FE Engineer
+              to provide the best clarity for the users.
             </p>
 
             <div className={styles.figure}>
@@ -423,16 +447,21 @@ export default function GravionCaseStudy() {
                 className={styles.figureImage}
               />
               <div className={styles.caption}>
-                Gravion&apos;s rule creation screen for Velocity logic, a
-                complex expanded capability of the FDS.
+                <span className={styles.desktopOnly}>
+                  Gravion&apos;s rule creation screen for Velocity logic, a
+                  complex expanded capability of the FDS.
+                </span>
+                <span className={styles.mobileOnly}>
+                  Gravion&apos;s full rule creation screen for Velocity logic, a
+                  complex expanded capability of the FDS.
+                </span>
               </div>
             </div>
 
             <p className={styles.paragraph}>
-              Because the builder only offers valid options, it is designed to
-              prevent the typing errors and repeated testing cycles described in
-              the Problem Statement. Rules of supported types can be implemented
-              without a handoff to engineering.
+              Since the builder only offers valid options, the users do test
+              cycles quickly and frequently. Then, the rules can be sent for
+              approvals and later implemented without a handoff to engineering.
             </p>
 
             <div className={styles.figureGrid}>
@@ -445,8 +474,8 @@ export default function GravionCaseStudy() {
                   className={styles.figureImage}
                 />
                 <div className={styles.caption}>
-                  A new addition to V2 was the &quot;Group By&quot; drop down with
-                  multi-select and pre-defined options.
+                  A new addition to V2 was the &ldquo;Group By&rdquo; drop down
+                  with multi-select and pre-defined options.
                 </div>
               </div>
 
@@ -467,12 +496,12 @@ export default function GravionCaseStudy() {
           </div>
         </section>
 
-        {/* Outcome */}
+        {/* 6. Outcome */}
         <section className={styles.section}>
           <div className={styles.sectionSidebar}>
             <div className={styles.sectionEyebrow}>
               <Image
-                src="/assets/icons/pointing-right.svg"
+                src="/assets/icons/pointing-grey.svg"
                 alt="Pointer"
                 width={14}
                 height={14}
@@ -487,15 +516,20 @@ export default function GravionCaseStudy() {
               expert.
             </h2>
 
-            <div className={styles.figure}>
-              <Image
-                src="/assets/images/showcase-gravion/grv_img9-before-after.jpeg"
-                alt="Expert estimate before and after"
-                width={1200}
-                height={600}
-                className={styles.figureImage}
-              />
-              <div className={styles.caption}>Expert estimate, pre-launch</div>
+            {/* Desktop position for Before/After figure (directly under title) */}
+            <div className={styles.desktopOnly}>
+              <div className={styles.figure}>
+                <Image
+                  src="/assets/images/showcase-gravion/grv_img9-before-after.jpeg"
+                  alt="Expert estimate before and after"
+                  width={1200}
+                  height={600}
+                  className={styles.figureImage}
+                />
+                <div className={styles.caption}>
+                  Expert estimate, pre-launch
+                </div>
+              </div>
             </div>
 
             <h3 className={styles.subTitle}>V1 (ALTO)</h3>
@@ -514,6 +548,22 @@ export default function GravionCaseStudy() {
               not a production result.
             </p>
 
+            {/* Mobile position for Before/After figure (after V2 Gravion) */}
+            <div className={styles.mobileOnly}>
+              <div className={styles.figure}>
+                <Image
+                  src="/assets/images/showcase-gravion/grv_img9-before-after.jpeg"
+                  alt="Expert estimate before and after"
+                  width={1200}
+                  height={600}
+                  className={styles.figureImage}
+                />
+                <div className={styles.caption}>
+                  Expert estimate, pre-launch
+                </div>
+              </div>
+            </div>
+
             <h3 className={styles.subTitle}>Scope</h3>
             <p className={styles.paragraph}>
               The builder covers most rule types, not all. When a new fraud
@@ -523,12 +573,12 @@ export default function GravionCaseStudy() {
           </div>
         </section>
 
-        {/* Reflection */}
+        {/* 7. Reflection */}
         <section className={styles.section}>
           <div className={styles.sectionSidebar}>
             <div className={styles.sectionEyebrow}>
               <Image
-                src="/assets/icons/pointing-right.svg"
+                src="/assets/icons/pointing-grey.svg"
                 alt="Pointer"
                 width={14}
                 height={14}
@@ -548,9 +598,9 @@ export default function GravionCaseStudy() {
             </p>
             <p className={styles.paragraph}>
               If I did it again, I would ask for explicit usability feedback and
-              time a few analysts writing rules by hand, so the 10-minute baseline
-              would be a measurement, not an estimate. This goes for both version
-              of the FDS.
+              time a few analysts writing rules by hand, so the 10-minute
+              baseline would be a measurement, not an estimate. This goes for
+              both version of the FDS.
             </p>
 
             <BackToTop />
