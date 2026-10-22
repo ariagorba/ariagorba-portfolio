@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import CaseStudyLightbox from "@/components/CaseStudyLightbox";
 import styles from "@/components/CaseStudy.module.css";
 
 export const metadata = {
@@ -507,6 +508,7 @@ export default function LenderPortalCaseStudy() {
         </div>
       </main>
 
+      <CaseStudyLightbox />
       <Footer />
     </div>
   );

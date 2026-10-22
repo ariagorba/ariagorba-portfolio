@@ -276,9 +276,9 @@
 /* Figures and Images */
 .figure {
   margin: 2rem 0;
-  background-color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
+  /* background-color: #FFFFFF; */
+  /* border: 1px solid rgba(0, 0, 0, 0.4); */
+  /* border-radius: 8px; */
   overflow: hidden;
 }
 
@@ -286,6 +286,14 @@
   width: 100%;
   height: auto;
   display: block;
+  cursor: zoom-in;
+  transition: opacity 0.2s ease;
+  border: 1px solid rgba(91, 91, 96);
+  border-radius: 12px;
+}
+
+.figureImage:hover {
+  opacity: 0.96;
 }
 
 .caption {
@@ -296,8 +304,8 @@
   font-weight: 500;
   color: var(--text-dark-3);
   text-align: center;
-  background-color: #FFFFFF;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  /* background-color: #FFFFFF; */
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
   line-height: 1.5;
 }
 
