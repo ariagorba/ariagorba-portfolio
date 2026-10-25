@@ -69,9 +69,9 @@
 
 .readMore {
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: var(--text-dark-1);
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 4px;
   white-space: nowrap;
