@@ -55,9 +55,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: var(--text-dark-3);
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: none;
   font-family: var(--font-body);
   font-size: 1.25rem;
   font-weight: 500;
@@ -70,16 +70,12 @@
 }
 
 .secondaryBtn:hover {
-  background-color: #F8F8FA;
-  border-color: rgba(0, 0, 0, 0.3);
-  color: var(--text-dark-1);
+  background-color: #e5e5e5;
   transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 .secondaryBtn:active {
   transform: translateY(0);
-  background-color: #ECECEF;
 }
 
 /* Primary dark pill button style for Get in touch / Contact */

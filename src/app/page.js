@@ -58,7 +58,7 @@ export default function Home() {
             Designing Products People Actually Use.
           </h1>
           <p className={styles.heroBio}>
-            Shipped is good. Adopted is better. I design product and UX through research, product thinking, and judgement based on 9 years in tech and 12 in advertising.
+            <b>“Shipped is good. Adopted is better.”</b> That&apos;s my mantra.<br />I design product and UX through research, product thinking, and judgement based on 9 years in tech and 12 in advertising.
           </p>
 
           {/* Mobile-only quick links under hero */}
