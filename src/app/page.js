@@ -55,13 +55,10 @@ export default function Home() {
         {/* Hero Section */}
         <section className={styles.heroSection} aria-labelledby="hero-title">
           <h1 id="hero-title" className={styles.heroTitle}>
-            I&apos;m a Product / UX Designer who aims for adoption.
+            Designing Products People Actually Use.
           </h1>
           <p className={styles.heroBio}>
-            My goal in designing any product is always the same:{" "}
-            <strong>get it used, not just shipped</strong>. I get there through
-            deep research, judgment built from 9 years in tech and 12 in
-            advertising, and a solid, actionable plan.
+            Shipped is good. Adopted is better. I design product and UX through research, product thinking, and judgement based on 9 years in tech and 12 in advertising.
           </p>
 
           {/* Mobile-only quick links under hero */}
