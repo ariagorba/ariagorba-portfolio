@@ -1,0 +1,197 @@
+.card {
+  display: flex;
+  background-color: var(--surface-card-regular);
+  border-radius: 24px;
+  border: 1px solid var(--border-card-regular);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04), 0 16px 16px -12px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06), 0 24px 28px -12px rgba(0, 0, 0, 0.12);
+  border-color: var(--border-card-regular);
+}
+
+.withImage {
+  flex-direction: row;
+  min-height: 260px;
+}
+
+.textOnly {
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 33.333%;
+  max-width: 33.333%;
+  flex: 0 0 33.333%;
+  overflow: hidden;
+  background-color: #F3F3F7;
+}
+
+.cardImage {
+  object-fit: cover;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover .cardImage {
+  transform: scale(1.025);
+}
+
+.content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+  min-width: 0;
+  justify-content: flex-start;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  font-family: var(--font-body);
+  font-size: 1.625rem;
+  /* 26px */
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text-dark-1);
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.card:hover .title {
+  color: #000000;
+}
+
+/* Badge styling for PDF / LINK */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  /* ~11px */
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 2px 5px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.badgePdf {
+  background-color: #e3f9fe;
+  border-color: #66cae1;
+  color: #006dc0;
+}
+
+.badgeLink {
+  background-color: #e3f9fe;
+  border-color: #66cae1;
+  color: #006dc0;
+}
+
+.description {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  /* 20px */
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-dark-2);
+  margin: 0;
+  flex-grow: 1;
+}
+
+.cta {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  /* 16px */
+  color: var(--text-dark-2);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  white-space: nowrap;
+  display: inline-block;
+  margin-top: auto;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover .cta {
+  color: #000000;
+  transform: translateX(2px);
+}
+
+@media (max-width: 900px) {
+  .withImage {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .textOnly {
+    min-height: auto;
+  }
+
+  .imageContainer {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+    aspect-ratio: 318 / 160;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    border-radius: 24px;
+  }
+
+  .withImage {
+    min-height: auto;
+  }
+
+  .textOnly {
+    min-height: auto;
+  }
+
+  .content {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .textOnly .content {
+    padding: 24px 16px;
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .cta {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
