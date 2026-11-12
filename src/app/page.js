@@ -116,7 +116,7 @@ export default function Home() {
           {/* Mobile-only quick links under hero */}
           <div className={styles.mobileHeroLinks}>
             <a
-              href="https://drive.google.com/file/d/1_SqEmjltjW6XL8qUI2uBgyW4oH1jcvqT/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1jAVojhhTpI2mPongtTrHofMHm8KVAy5n/view?usp=sharing"
               className={styles.mobileLink}
               target="_blank"
               rel="noopener noreferrer"

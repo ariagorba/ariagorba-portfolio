@@ -30,7 +30,7 @@ export default function Navbar({ showHomeOnMobile = false }) {
         <div className={styles.navRight}>
           <div className={styles.desktopMenu}>
             <a
-              href="https://drive.google.com/file/d/1_SqEmjltjW6XL8qUI2uBgyW4oH1jcvqT/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1jAVojhhTpI2mPongtTrHofMHm8KVAy5n/view?usp=sharing"
               className={styles.secondaryBtn}
               target="_blank"
               rel="noopener noreferrer"
