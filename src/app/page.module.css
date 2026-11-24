@@ -16,13 +16,13 @@
 }
 
 .heroTitle {
-  font-family: var(--font-heading);
-  font-size: 4rem; /* 64px */
+  font-family: var(--font-serif);
+  font-size: var(--text-display);
   font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: -0.01em;
+  line-height: var(--lh-display);
+  letter-spacing: -0.02em;
   color: var(--text-dark-1);
-  margin-bottom: 1.5rem; /* 24px */
+  margin-bottom: var(--space-display);
 }
 
 .heroBio {
@@ -122,13 +122,6 @@
   .heroSection {
     padding-top: 2.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .heroTitle {
-    font-size: 1.75rem;
-    line-height: 1.3;
-    font-weight: 800;
-    margin-bottom: 1.25rem;
   }
 
   .heroBio {

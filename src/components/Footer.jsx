@@ -14,7 +14,7 @@ export default function Footer() {
 
         <div className={styles.rightCol}>
           <a
-            href="https://drive.google.com/file/d/1jAVojhhTpI2mPongtTrHofMHm8KVAy5n/view?usp=sharing"
+            href="https://drive.google.com/file/d/1mOGXTQB39a7khsPETLnnNkf3TtilSRm7/view?usp=drive_link"
             className={styles.linkItem}
             target="_blank"
             rel="noopener noreferrer"

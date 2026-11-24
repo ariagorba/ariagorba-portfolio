@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Portfolio Fluid Typography System
+   Fonts: Plus Jakarta Sans (Sans), Aleo (Serif), PT Mono (Mono)
+   Scale: Tailored Major Third (1.25) | Base: 16px | Grid: 4px
+   Fluid Viewport Range: 375px (Mobile) -> 1280px (Desktop)
+   ========================================================================== */
+
+:root {
+  /* Font Family Tokens (loaded via next/font/google in layout.js) */
+  --font-sans: var(--font-plus-jakarta), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: var(--font-aleo), Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-mono: var(--font-pt-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Fluid Font Sizes (375px -> 1280px) */
+  --text-display: clamp(2.25rem, 1.628rem + 2.652vw, 3.75rem);   /* 36px -> 60px */
+  --text-h1:      clamp(2rem, 1.586rem + 1.768vw, 3rem);         /* 32px -> 48px */
+  --text-h2:      clamp(1.75rem, 1.543rem + 0.884vw, 2.25rem);   /* 28px -> 36px */
+  --text-h3:      clamp(1.375rem, 1.323rem + 0.221vw, 1.5rem);   /* 22px -> 24px */
+  --text-h4:      clamp(1.125rem, 1.073rem + 0.221vw, 1.25rem);  /* 18px -> 20px */
+  --text-body-lg: clamp(1.125rem, 1.073rem + 0.221vw, 1.25rem);  /* 18px -> 20px */
+  --text-body-md: 1rem;                                          /* 16px */
+  --text-body-sm: 0.875rem;                                      /* 14px */
+  --text-caption: 0.75rem;                                       /* 12px */
+
+  /* Fluid Line Heights */
+  --lh-display: clamp(2.75rem, 2.128rem + 2.652vw, 4.25rem);     /* 44px -> 68px */
+  --lh-h1:      clamp(2.5rem, 2.086rem + 1.768vw, 3.5rem);       /* 40px -> 56px */
+  --lh-h2:      clamp(2.25rem, 2.043rem + 0.884vw, 2.75rem);     /* 36px -> 44px */
+  --lh-h3:      clamp(1.75rem, 1.646rem + 0.442vw, 2rem);        /* 28px -> 32px */
+  --lh-h4:      clamp(1.5rem, 1.396rem + 0.442vw, 1.75rem);      /* 24px -> 28px */
+  --lh-body-lg: clamp(1.75rem, 1.698rem + 0.221vw, 1.875rem);    /* 28px -> 30px */
+  --lh-body-md: 1.5rem;                                          /* 24px */
+  --lh-body-sm: 1.25rem;                                         /* 20px */
+  --lh-caption: 1rem;                                            /* 16px */
+
+  /* Fluid Paragraph / Block Spacing */
+  --space-display: clamp(1.5rem, 1.293rem + 0.884vw, 2rem);      /* 24px -> 32px */
+  --space-h1:      clamp(1.25rem, 1.043rem + 0.884vw, 1.75rem);  /* 20px -> 28px */
+  --space-h2:      clamp(1rem, 0.793rem + 0.884vw, 1.5rem);      /* 16px -> 24px */
+  --space-h3:      1rem;                                         /* 16px */
+  --space-h4:      0.75rem;                                      /* 12px */
+  --space-body-lg: clamp(1rem, 0.896rem + 0.442vw, 1.25rem);     /* 16px -> 20px */
+  --space-body-md: 1rem;                                         /* 16px */
+  --space-body-sm: 0.75rem;                                      /* 12px */
+  --space-caption: 0.5rem;                                       /* 8px */
+}
+
+/* ==========================================================================
+   Base & Semantic Element Defaults
+   ========================================================================== */
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body-md);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Editorial Display & Headings (Aleo Serif) */
+.text-display {
+  font-family: var(--font-serif);
+  font-size: var(--text-display);
+  line-height: var(--lh-display);
+  margin-bottom: var(--space-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1, .text-h1 {
+  font-family: var(--font-serif);
+  font-size: var(--text-h1);
+  line-height: var(--lh-h1);
+  margin-bottom: var(--space-h1);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+h2, .text-h2 {
+  font-family: var(--font-serif);
+  font-size: var(--text-h2);
+  line-height: var(--lh-h2);
+  margin-bottom: var(--space-h2);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* UI & Subsection Headings (Plus Jakarta Sans) */
+h3, .text-h3 {
+  font-family: var(--font-sans);
+  font-size: var(--text-h3);
+  line-height: var(--lh-h3);
+  margin-bottom: var(--space-h3);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h4, .text-h4 {
+  font-family: var(--font-sans);
+  font-size: var(--text-h4);
+  line-height: var(--lh-h4);
+  margin-bottom: var(--space-h4);
+  font-weight: 600;
+}
+
+/* Editorial Pull Quotes & Lead Text (Aleo Serif) */
+.text-body-lg {
+  font-family: var(--font-serif);
+  font-size: var(--text-body-lg);
+  line-height: var(--lh-body-lg);
+  margin-bottom: var(--space-body-lg);
+  font-weight: 400;
+}
+
+/* Core Case Study Body Copy (Plus Jakarta Sans) */
+p, .text-body-md {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body-md);
+  margin-bottom: var(--space-body-md);
+  font-weight: 400;
+}
+
+.text-body-sm {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm);
+  line-height: var(--lh-body-sm);
+  margin-bottom: var(--space-body-sm);
+  font-weight: 400;
+}
+
+/* Technical Metadata, Tags, Timelines & Code (PT Mono) */
+.text-caption, .text-meta {
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  line-height: var(--lh-caption);
+  margin-bottom: var(--space-caption);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+code, pre, .font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Optional Utility Overrides */
+.font-sans  { font-family: var(--font-sans); }
+.font-serif { font-family: var(--font-serif); }
